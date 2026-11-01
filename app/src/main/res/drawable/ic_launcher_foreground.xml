@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Trăng lưỡi liềm -->
+    <path
+        android:fillColor="#FFB04A"
+        android:pathData="M53.75,32 A22,22 0 1 0 75.05,60.4 A18,18 0 1 1 53.75,32 Z" />
+    <!-- Ngôi sao nhỏ -->
+    <path
+        android:fillColor="#FFD9A0"
+        android:pathData="M73,36 a3,3 0 1 0 6,0 a3,3 0 1 0 -6,0 Z" />
+</vector>

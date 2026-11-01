@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Lọc Ánh Sáng Đêm</string>
+    <string name="title">Lọc ánh sáng đêm</string>
+    <string name="subtitle">Giảm ánh sáng xanh và độ chói để dễ nhìn và dễ ngủ hơn.</string>
+
+    <string name="switch_enable">Bật bộ lọc</string>
+
+    <string name="permission_title">Cần cấp quyền</string>
+    <string name="permission_body">Ứng dụng cần quyền “Hiển thị trên các ứng dụng khác” để phủ lớp lọc màu lên màn hình. Ứng dụng không đọc và không thu thập bất kỳ dữ liệu nào.</string>
+    <string name="permission_button">Cấp quyền</string>
+    <string name="toast_grant_overlay">Hãy bật “Cho phép hiển thị trên các ứng dụng khác” cho ứng dụng này</string>
+    <string name="toast_service_failed">Không thể khởi động bộ lọc. Hãy mở lại ứng dụng và thử lần nữa.</string>
+
+    <string name="section_adjust">Tinh chỉnh</string>
+    <string name="label_warmth">Độ ấm màu: %1$d%%</string>
+    <string name="label_dim">Độ tối: %1$d%%</string>
+    <string name="section_presets">Cài đặt nhanh</string>
+    <string name="preset_gentle">Nhẹ</string>
+    <string name="preset_night">Ban đêm</string>
+    <string name="preset_deep">Rất ấm</string>
+
+    <string name="schedule_switch">Tự động bật theo giờ</string>
+    <string name="schedule_start">Bắt đầu: %1$s</string>
+    <string name="schedule_end">Kết thúc: %1$s</string>
+    <string name="schedule_hint">Khi bật hẹn giờ, bộ lọc chỉ hoạt động trong khoảng thời gian này.</string>
+
+    <string name="tip">Mẹo: trên một số máy (Xiaomi, Oppo, Vivo, Samsung…) hãy cho phép ứng dụng chạy nền hoặc tự khởi động và tắt tối ưu pin để bộ lọc không bị hệ thống tắt.</string>
+
+    <string name="tile_label">Lọc ánh sáng</string>
+    <string name="tile_on">Đang bật</string>
+    <string name="tile_off">Đang tắt</string>
+    <string name="add_tile_button">Thêm vào Cài đặt nhanh</string>
+    <string name="add_tile_hint">Thêm ô bật/tắt vào bảng kéo xuống từ đầu màn hình để bật nhanh mà không cần mở app.</string>
+    <string name="toast_tile_added">Đã thêm vào Cài đặt nhanh</string>
+    <string name="toast_tile_already">Ô này đã có trong Cài đặt nhanh</string>
+    <string name="toast_tile_manual">Hãy kéo xuống bảng Cài đặt nhanh, bấm biểu tượng bút chì và kéo ô “Lọc ánh sáng” lên trên</string>
+
+    <string name="channel_name">Bộ lọc ánh sáng đêm</string>
+    <string name="notif_on">Bộ lọc đang bật</string>
+    <string name="notif_waiting">Đang chờ đến giờ hẹn</string>
+    <string name="notif_turn_off">Tắt</string>
+</resources>
