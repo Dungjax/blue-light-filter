@@ -40,4 +40,8 @@
     <string name="notif_on">Bộ lọc đang bật</string>
     <string name="notif_waiting">Đang chờ đến giờ hẹn</string>
     <string name="notif_turn_off">Tắt</string>
+    <string name="a11y_description">Chỉ dùng để hiển thị lớp lọc bằng cửa sổ Trợ năng. Dịch vụ không đọc nội dung cửa sổ.</string>
+    <string name="a11y_hint">Bật dịch vụ Trợ năng để thử phủ bộ lọc lên thanh thông báo và Cài đặt nhanh. Khả năng hiển thị trên màn hình khóa tùy Android và nhà sản xuất.</string>
+    <string name="a11y_button">Mở cài đặt Trợ năng</string>
+    <string name="a11y_enabled">Dịch vụ Trợ năng đã được bật.</string>
 </resources>

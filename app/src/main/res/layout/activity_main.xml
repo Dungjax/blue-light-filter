@@ -210,6 +210,30 @@
                 android:textSize="13sp" />
         </LinearLayout>
 
+        <LinearLayout
+            android:id="@+id/a11yCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/card_bg"
+            android:orientation="vertical"
+            android:padding="16dp">
+            <TextView
+                android:id="@+id/a11yText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/a11y_hint"
+                android:textColor="@color/text_secondary"
+                android:textSize="14sp" />
+            <Button
+                android:id="@+id/a11yButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:minHeight="48dp"
+                android:text="@string/a11y_button" />
+        </LinearLayout>
+
         <!-- Thêm ô vào Cài đặt nhanh (chỉ hiện trên Android 13+) -->
         <LinearLayout
             android:id="@+id/tileCard"
