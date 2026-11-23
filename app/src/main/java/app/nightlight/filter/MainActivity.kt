@@ -38,6 +38,9 @@ class MainActivity : Activity() {
     private lateinit var startButton: Button
     private lateinit var endButton: Button
     private lateinit var tileCard: View
+    private lateinit var a11yCard: View
+    private lateinit var a11yText: TextView
+    private lateinit var a11yButton: Button
     private lateinit var addTileButton: Button
 
     /** true khi đang cập nhật giao diện bằng code, để bỏ qua các listener. */
@@ -87,6 +90,9 @@ class MainActivity : Activity() {
         startButton = findViewById(R.id.startButton)
         endButton = findViewById(R.id.endButton)
         tileCard = findViewById(R.id.tileCard)
+        a11yCard = findViewById(R.id.a11yCard)
+        a11yText = findViewById(R.id.a11yText)
+        a11yButton = findViewById(R.id.a11yButton)
         addTileButton = findViewById(R.id.addTileButton)
     }
 
@@ -97,6 +103,7 @@ class MainActivity : Activity() {
         }
 
         grantButton.setOnClickListener { requestOverlayPermission() }
+        a11yButton.setOnClickListener { startActivity(Intent(Settings.ACTION_ACCESSIBILITY_SETTINGS)) }
 
         if (Build.VERSION.SDK_INT >= 33) {
             addTileButton.setOnClickListener { requestAddTile() }
@@ -238,6 +245,10 @@ class MainActivity : Activity() {
             if (Settings.canDrawOverlays(this)) View.GONE else View.VISIBLE
 
         masterSwitch.isChecked = prefs.enabled
+        val a11yOn = prefs.isAccessibilityServiceEnabled()
+        a11yText.setText(if (a11yOn) R.string.a11y_enabled else R.string.a11y_hint)
+        a11yButton.visibility = if (a11yOn) View.GONE else View.VISIBLE
+        a11yCard.visibility = View.VISIBLE
 
         warmthSeek.progress = prefs.warmth
         warmthLabel.text = getString(R.string.label_warmth, prefs.warmth)

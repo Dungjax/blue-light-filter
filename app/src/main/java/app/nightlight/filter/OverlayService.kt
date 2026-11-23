@@ -100,7 +100,7 @@ class OverlayService : Service() {
         }
 
         val active = scheduleAllows()
-        if (active) showOrUpdateOverlay() else removeOverlay()
+        if (active && !prefs.a11yActive) showOrUpdateOverlay() else removeOverlay()
 
         if (lastActive != active) {
             lastActive = active
